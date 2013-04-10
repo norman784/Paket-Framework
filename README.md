@@ -4,11 +4,38 @@ PHP Framework
 
 ## Description
 
-This is one of my first php mvc frameworks, long time I don't use it and is outdated. But now that I've found again maybe I will update it and use on my own projects
+This is one of my first php mvc frameworks, long time I don't use it and is outdated. But now that I've found again maybe I will update it and use on my own projects.
+
+## How it works
+
+This should look like your app after instalation on a shared host
+
+/PK/
+/PK_root
+/public_html
+	/config
+	/controller
+	/layouts
+	/model
+	/plugins
+	/public
+	/view
+	/.htaccess
+	/bootstrap.php
+	/PK_project
+
+Why folder PK and file PK_root are on the user webroot?
+- Because PK its the framework core and the initial idea was to have the core in a place accesible for all the apps so we don't need to duplicate the files over and over again, the file PK_root is a flag file that indicates the app where is locate the PK folder so whe can add it to the include_path.
+
+What user has the PK_project file?
+- As the PK_root is the flag to determine where is the project files.
+
+At this point the app must be working (I've not tested yet).
 
 ## TODO
 
-Update the readme to reflect the real state of the framework
+- Update the readme to reflect the real state of the framework.
+- Planning to update some libs to use [composer](http://getcomposer.org) and make it compatible to install via the package manager (Its just and idea).
 
 ## The MIT License (MIT)
 
