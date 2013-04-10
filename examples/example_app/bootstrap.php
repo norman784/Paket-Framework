@@ -74,7 +74,7 @@ include_once 'PK/PK.php';
 Traemos los controles
 -------------------------------------------------------------*/	
 
-$controllers = split(',', 'default,'.$_GET['url']['controller']);
+$controllers = explode(',', 'default,'.$_GET['url']['controller']);
 
 foreach ($controllers as $c):
 	get('controller', $c);
