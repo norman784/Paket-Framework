@@ -22,7 +22,7 @@ $i18n_def['es'] = array(
  */
 function get_extended() {
 	global $config, $GET;
-	
+
 	if ($config['extended_url'] != true)
 		return;
 	
@@ -1001,7 +1001,7 @@ function app_get($folder = 'controller', $app = '') {
 	endswitch;
 	
 	if (false !== strpos($folder, '/')) {
-       	$replace = split('/', $folder);
+       	$replace = explode('/', $folder);
        	$replace = $replace[count($replace)-1]; 
     } else {
        	$replace = $folder;
