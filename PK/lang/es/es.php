@@ -25,4 +25,3 @@ defined('TXT_PASSWORD') or define('TXT_PASSWORD', 'Contrase&ntilde;a');
 
 defined('TXT_RESULT_MESSAGE') or define('TXT_RESULT_MESSAGE', 'Resultados <strong>%s</strong> - <strong>%s</strong> de aproximadamente <strong>%s</strong>');
 defined('TXT_EMPTY') or define('TXT_EMPTY', 'No hay datos para mostrar');
-?>
